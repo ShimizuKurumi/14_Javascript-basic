@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson</title>
+</head>
+
+<body>
+    <dl class="recipe">
+        <dt>カップヌードルの作り方</dt>
+        <dd>フタを途中まで開ける</dd>
+        <dd>お湯を線まで入れてフタをする</dd>
+    </dl>
+    <script>
+        //変数elementの中に要素を取得するコード(documentの中のdl)を書く
+        //メソッド=やりたいこと
+        const element = document.querySelector("dl");
+        console.log(element);
+
+        //createElementsでddを作る(変数に入れるのを忘れずに)
+        //dllastのtextcontentプロパティに文字を代入
+        const dllast = document.createElement("dd");
+        dllast.textContent = "3分待ってできあがり";
+
+        //dl(変数)の最後に(appendChild)にdd(変数)を追加する
+        element.appendChild(dllast);
+
+
+
+        //ダブルクォーテーションは文字列
+        const animals = ["dog", "cat", "bird"];
+
+        //確認
+        console.log(animals);
+
+        //長さ
+        console.log(animals.length);//3
+
+
+        for (let i = 0; i < 9; i++) {
+            //このiを使って7の段をコンソールに表示させてください。
+            console.log("7", "×", (i + 1), "=", 7 * (i + 1));
+
+            //テンプレートリテラル
+            console.log(`7×${i + 1}=${7 * (i + 1)}`);
+        }
+
+        let name_list = ["松田", "田中", "中山", "山本", "本田", "鬼頭",];
+        console.log(name_list);
+        for (let i = 0; i < name_list.length; i++) {
+            console.log(i);
+            console.log(name_list[i]);
+        }
+    </script>
+</body>
+
+</html>

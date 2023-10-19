@@ -4,7 +4,47 @@
 1. 10月5日　はじめの一歩
 1. 10月5日　Github リポジトリ作成
 1. 10月12日　文字列の連結、変数、定数、複合代入演算子
+1. 10月19日
 
+## 10月19日
+- コレクション(配列)
+- 繰り返し処理(for文)
+- 配列を使った複数要素の追加
+- 要素の創出
+
+```html
+    <h1>人気フルーツ一覧</h1>
+    <ul id="fruitslist" class="listbox__list"></ul>
+
+```
+```js
+        //ulの中に果物一覧を一度にliで入れたい。
+        //配列fruitsを宣言・値を代入
+        const fruits = ["りんご", "もも", "バナナ"];
+
+        //バナナがほしい
+        console.log(fruits[2]);
+
+        //ulをJavaScript空間に引きずり込む
+        const element = document.querySelector("#fruitslist");
+        console.log(element);
+
+        //fruitsの要素数分だけfor文で回す
+        for (let i = 0; i < fruits.length; i++) {
+            //liを3回作る
+            const lilast = document.createElement("li");
+
+            //liに値(果物→配列fruitsの中にある)を代入
+            console.log(fruits[i]);//りんごももバナナが取れる
+
+            //作ったliの内容に果物を代入
+            lilast.textContent = fruits[i];
+
+            //element(#ul)の中の最後に追加(表示させる)
+            element.appendChild(lilast);
+        }
+
+```
 ## 10月12日
 - リテラルと演算子
 - 文字列の連結
