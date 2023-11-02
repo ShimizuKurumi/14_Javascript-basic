@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <h1 id="header">ヘッドスピン</h1>
+
+  <div class="btnArea">
+    <div class="button dancing">Let’sダンス</div>
+    <div class="button stop">ストップ</div>
+    <div class="button change">ダンサーチェンジ</div>
+  </div>
+  <div class="imgArea">
+    <img src="images/dance_breakdance_headspin.png" alt="ブレイクダンサーいらすと" />
+  </div>
+  <script>
+    //ここに記述します。
+    const dacingBtn = document.querySelector(".dancing");
+    console.log(dacingBtn);
+
+    dacingBtn.addEventListener("click", function () { dancer.setAttribute("class", "dance") });
+    console.log(dacingBtn);
+
+
+    const stopBtn = document.querySelector(".stop");
+    console.log(stopBtn);
+
+    stopBtn.addEventListener("click", function () { dancer.removeAttribute("class", "dance") });
+    console.log(stopBtn);
+
+
+    const changeBtn = document.querySelector(".change");
+    console.log(changeBtn);
+
+
+    /*setAttributeのurlはパスをちゃんと書く(フォルダ名など)*/
+    changeBtn.addEventListener("click", function () { dancer.setAttribute("src", "images/ballet_woman.png") });
+    console.log(changeBtn);
+
+
+    const dancer = document.querySelector("img");
+    console.log(dancer);
+  </script>
+</body>
+
+</html>
