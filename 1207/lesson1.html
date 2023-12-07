@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>関数</title>
+</head>
+
+<body>
+    <div class="fnArea">
+
+    </div>
+
+    <script>
+        // const member_list = ["チェウォン", "サクラ", "ユンジン", "カズハ", "ウンチェ"];
+        // const mugiwara_list = [
+        //     "モンキー・D・ルフィ",
+        //     "ナミ",
+        //     "ロロノア・ゾロ",
+        //     "ヴィンスモーク・サンジ",
+        //     "ウソップ",
+        //     "トニートニー・チョッパー",
+        //     "ニコ・ロビン",
+        //     "フランキー",
+        //     "ブルック",
+        //     "ジンベエ",
+        // ];
+
+        // const memberPush = function (members) {
+        //     console.log(members);
+        //     const ulElm = document.createElement("ul");
+        //     for (let i = 0; i < members.length; i++) {
+        //         const liElm = document.createElement("li");
+        //         liElm.textContent = mambers[i];
+        //         console.log(liElm, ulElm);
+        //         ulElm.appendChild(liElm);
+        //     }
+        //     memberArea.appendChild(ulElm);
+        // }
+
+        // const lessreafimBtn = document.querySelector(".lesserafim");
+        // const onepeaceBtn = document.querySelector(".onepeace");
+
+        // lessreafimBtn.addEventListener("click", function () {
+        //     console.log("ルセラフィム");
+        // })
+
+        const addition = function (a, b) {
+            const c = a + b;
+            console.log(c);
+        }
+
+        addition(10, 11);//コンソールに21と表示される
+        addition(30, "6"); //306
+
+        const addition2 = function (a, b) {
+            const c = a * b
+            return c;//戻り値
+        }
+
+        //関数の実行
+        const result = addition2(5, 5)//25
+        console.log(result);
+    </script>
+</body>
+
+</html>
