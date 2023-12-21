@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+body {
+    background-color: #161c33;
+    margin-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.slide {
+    display: flex;
+    width: 60%;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 0px 5px 100px 0px rgba(22, 28, 51, 0.2);
+}
+
+.slide img {
+    width: 100%;
+    min-width: 100%;
+    transition: all 0.5s ease;
+    /* CSSアニメーションの設定 */
+}
+
+.slide img:first-child {
+    margin-left: -100%;
+}
+
+/* ボタンを横並びで中央揃えに */
+.buttons {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 32px auto 0;
+}
+
+.leftBtn,
+.rightBtn {
+    border: #fff solid 1px;
+    padding: 24px;
+    width: 100px;
+    border-radius: 50px;
+    transition-duration: .5s;
+    margin: 0 10px;
+}
+
+.leftBtn:hover,
+.rightBtn:hover {
+    background-color: #c9a11a;
+    border: #c9a11a solid 1px;
+}
+
+
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+    letter-spacing: 0.07em;
+    font-size: 48px;
+    margin-bottom: 32px;
+    position: relative;
+    padding-bottom: 24px;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 2px;
+    background-color: #c9a11a;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .loop {
+    display: flex;
+    overflow: hidden;
+    color: #babfd6;
+}
+
+.loop p {
+    padding-right: .5em;
+    font-size: 15vw;
+    white-space: nowrap;
+}
+
+.text03 {
+    animation: loop 50s -25s linear infinite;
+}
+
+.text04 {
+    animation: loop2 50s linear infinite;
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes loop2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+} */
