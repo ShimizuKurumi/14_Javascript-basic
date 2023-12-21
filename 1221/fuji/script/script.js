@@ -26,4 +26,4 @@ const rightSlider = function () {
 
 rightBtn.addEventListener("click", rightSlider);
 
-window.setInterval(leftSlider, 2000);//2000ミリ秒=2秒
+window.setInterval(leftSlider, 3000);//2000ミリ秒=2秒
