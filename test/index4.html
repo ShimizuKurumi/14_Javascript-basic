@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="counter">
+        <button class="decrease">-</button>
+        <span class="count">0</span>
+        <button class="increase">+</button>
+    </div>
+    <script>
+        const counter = document.querySelector(".counter");
+        const decreaseButton = counter.querySelector(".decrease");
+        const countSpan = counter.querySelector(".count");
+        const increaseButton = counter.querySelector(".increase");
+
+        let count = 0;
+
+        decreaseButton.addEventListener("click", function () {
+            count--;
+            if (count < 0) {
+                count = 0;
+            }
+            countSpan.textContent = count;
+        });
+
+        increaseButton.addEventListener("click", function () {
+            count++;
+            countSpan.textContent = count;
+        });
+    </script>
+</body>
+
+</html>

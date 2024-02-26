@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const user = {
+            name: "鈴木花子",
+            age: 19,
+            gender: "女性",
+            email: "suzukihanako@example.com",
+            isAdmin: false,
+            address: {
+                street: "名古屋市中区栄1-2-3",
+                city: "名古屋市",
+                prefecture: "愛知県",
+                zipCode: "460-0008",
+            },
+            phoneNumbers: ["052-1234-5678", "070-9876-5432"],
+            hobbies: ["音楽鑑賞", "ショッピング", "カフェ巡り"],
+            birthday: new Date(2004, 0, 15), // 誕生日を YYYY, MM - 1, DD 形式で設定
+            accountBalance: 500.5,
+            preferredLanguages: ["日本語"],
+            subscriptionStatus: "アクティブ",
+            school: "名古屋市立高校",
+        };
+
+        console.log("性別: " + user.gender);
+        console.log("名古屋市: " + user.address.city);
+        console.log("誕生日: " + user.birthday.toLocaleDateString());
+        console.log("カフェ巡り: " + user.hobbies.includes("カフェ巡り"));
+        console.log("〒460-0008 愛知県名古屋市中区栄1-2-3: " + user.address.zipCode + " " + user.address.prefecture + " " + user.address.city + " " + user.address.street);
+    </script>
+</body>
+
+</html>

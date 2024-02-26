@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const pinkBlue =
+            ["ピンクブルー",
+                "Starry Drama",
+                "ジブンセイフク",
+                "あうん",
+                "ミチヲユケ",
+                "うそつき",
+                "陽はまた昇るから",
+                "湿気っている",
+                "Don!! White Rabbit",
+                "さもなくば誰がやる",
+                "Slow dance",];
+
+        console.log(pinkBlue[4]);
+
+        for (let i = 0; i < pinkBlue.length; i++) {
+            console.log(pinkBlue[i]);
+        }
+
+        const elm = document.createElement("p");
+        elm.innerText = pinkBlue[4];
+        document.body.appendChild(elm);
+
+    </script>
+</body>
+
+</html>

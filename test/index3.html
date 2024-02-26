@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>三大栄養素</h1>
+    <ul>
+        <li class="protein">たんぱく質</li>
+        <li class="fats">脂質</li>
+        <li class="carbohydrate">炭水化物</li>
+    </ul>
+    <script>
+        const ul = document.querySelector("ul");
+        const listElm = document.querySelectorAll("li");
+        console.log(listElm);
+
+        for (let i = 0; i < listElm.length; i++) {
+            listElm[i].addEventListener("click", function () {
+                console.log(listElm[i].textContent);
+            });
+        };
+    </script>
+</body>
+
+</html>
