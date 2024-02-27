@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prob4-3.html</title>
+</head>
+
+<body>
+    <h1>人口が多い国ランキング</h1>
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <th>順位</th>
+            <th>国名</th>
+            <th>人口（億人）</th>
+        </tr>
+    </table>
+    <script>
+
+        let countries = {
+            china: [1, "中国", 14.48],
+            india: [2, "インド", 16.06],
+            indianecia: [3, "インドネシア", 2.79],
+        };
+
+        const tableelm = document.querySelector("table");
+
+        for (let key in countries) {
+            tableelm.insertAdjacentHTML("beforeend", "<td>" + countries[key] + "</td>");
+        }
+    </script>
+</body>
+
+</html>

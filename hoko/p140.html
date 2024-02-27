@@ -22,8 +22,6 @@
         なお、素数とは1とその数以外には約数を持たない数のことである。</p>
 
     <script>
-        const i = 0;
-
         for (let i = 1900; i <= 2100; i++) {
             if (i % 4 === 0) {
                 if (i % 100 !== 0 || i % 400 === 0) {
@@ -32,14 +30,15 @@
             }
         }
 
-        for (let i = 1; i <= 10; i++) {
+        for (let i = 2; i <= 100; i++) {
             let jadge = 0;
-            for (let j = 1; j <= 10; j++) {
+            for (let j = 1; j <= 100; j++) {
+                // console.log(i % j === 0);
                 if (i % j === 0) {
                     jadge += 1;
                 }
             }
-            if (jadge === 1) {
+            if (jadge <= 2) {
                 console.log(i);
             }
         }

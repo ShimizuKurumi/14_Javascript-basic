@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prob4-2</title>
+</head>
+
+<body>
+    <h1>小学生が将来なりたい職業ランキング</h1>
+    <ol>
+    </ol>
+    <script>
+        const olelm = document.querySelector("ol");
+
+        let ranking = ["サッカー選手・監督", "野球選手・監督", "医師", "ユーチューバー"];
+        for (let i = 0; i < ranking.length; i++) {
+            olelm.insertAdjacentHTML("beforeend", "<li>" + ranking[i] + "</li>");
+        }
+    </script>
+</body>
+
+</html>
