@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prob5-3</title>
+</head>
+
+<body>
+    <h1>住みたい街ランキング</h1>
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <th>順位</th>
+            <th>住みたい街</th>
+            <th>都道府県</th>
+        </tr>
+    </table>
+    <script>
+        let city = [
+            [1, "横浜市", "神奈川県"],
+            [2, "札幌市", "北海道"],
+            [3, "福岡市", "福岡県"],
+            [4, "名古屋市", "愛知県"],
+            [5, "世田谷区", "東京都"],
+        ];
+
+        const tableelm = document.querySelector("table");
+
+        //外側のforEach
+        city.forEach(function (data) {
+            const trelm = document.createElement("tr");
+
+            data.forEach(function (item) {
+                console.log(item);
+                trelm.insertAdjacentHTML("beforeend", "<td>" + item + "</td>");
+            });
+
+            console.log(trelm);
+
+            tableelm.appendChild(trelm);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6日目例題</title>
+</head>
+
+<body>
+    <h1>例題6-1</h1>
+    <p>次のサンプルは、2つの数値の計算（加算・減算）を行うclacオブジェクトで、aプロパティ、bプロパティの加算と減算を行うプログラムです。
+        このオブジェクトに、乗算、除算を行うメソッドを追加し、その計算結果も出力するようにしなさい。
+    </p>
+
+    <h1>計算オブジェクト</h1>
+    <script>
+        const bodyelm = document.querySelector("body");
+        //オブジェクトの定義
+        let calc = {
+            //プロパティ
+            a: 0,
+            b: 0,
+            //加算メソッド
+            add: function () {
+                let ans = this.a + this.b;
+                return ans;
+            },
+            //減算メソッド
+            sub: function () {
+                let ans = this.a - this.b;
+                return ans;
+            },
+
+            //乗算メソッド
+            mul: function () {
+                let ans = this.a * this.b;
+                return ans;
+            },
+
+            div: function () {
+                let ans = this.a / this.b;
+                return ans;
+            }
+        }
+
+        //計算処理
+        calc.a = 10;
+        calc.b = 5;
+
+        bodyelm.insertAdjacentHTML("beforeend", "<p>a=" + calc.a + "</p>");
+        bodyelm.insertAdjacentHTML("beforeend", "<p>b=" + calc.b + "</p>");
+        bodyelm.insertAdjacentHTML("beforeend", "<p>a+b=" + calc.add() + "</p>");
+        bodyelm.insertAdjacentHTML("beforeend", "<p>a-b=" + calc.sub() + "</p>");
+        bodyelm.insertAdjacentHTML("beforeend", "<p>a×b=" + calc.mul() + "</p>");
+        bodyelm.insertAdjacentHTML("beforeend", "<p>a÷b=" + calc.div() + "</p>");
+
+    </script>
+</body>
+
+</html>

@@ -27,7 +27,7 @@
         const tableelm = document.querySelector("table");
 
         for (let key in countries) {
-            tableelm.insertAdjacentHTML("beforeend", "<td>" + countries[key] + "</td>");
+            tableelm.insertAdjacentHTML("beforeend", "<tr><td>" + countries[key][0] + "</td>" + "<td>" + countries[key][1] + "</td>" + "<td>" + countries[key][2] + "</td></tr>");
         }
     </script>
 </body>

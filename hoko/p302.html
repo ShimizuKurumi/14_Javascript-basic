@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7日目例題</title>
+</head>
+
+<body>
+    <h1>例題7-1</h1>
+    <p>「sample4-14.html」(156ページ)を、document.writeではなくDOMを操作して実現する形に作り変えなさい。この際、DOMツリーに空のulタグを作り
+        追加し、その中のliタグの要素を挿入すること。
+    </p>
+
+    <h1>人気のフルーツ一覧</h1>
+    <ul></ul>
+    <script>
+        //ulタグのリストの要素を取得
+        let element = document.querySelector("ul");
+        //fruitsの配列
+        let fruits = ["りんご", "もも", "バナナ"];
+        for (let i = 0; i < fruits.length; i++) {
+            //liタグの要素のオブジェクトを生成
+            let liLast = document.createElement("li");
+            //テキストの入力
+            liLast.textContent = fruits[i];
+            //ulオブジェクトに追加
+            element.appendChild(liLast);
+        }
+    </script>
+</body>
+
+</html>
